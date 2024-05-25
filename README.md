@@ -5,7 +5,7 @@
 2. Download [SQL Server Management Studio (SSMS)](https://learn.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-ver16) and connect to locally hosted SQL Server database. 
 3. Download any AdventureWorks backup database from [here](https://github.com/Microsoft/sql-server-samples/releases/tag/adventureworks). I have considered [AdventureWorksLT2016](https://github.com/Microsoft/sql-server-samples/releases/download/adventureworks/AdventureWorksLT2016.bak) data in this project.
 4. Load the data into SQL Server into using SSMS as desribed [here](https://learn.microsoft.com/en-us/sql/samples/adventureworks-install-configure?view=sql-server-ver16&tabs=ssms#restore-to-sql-server). The database should look like below in SSMS:
-![SSMS_DB_snapshot]([./img/ssms_db_snapshot.png](https://github.com/jainharsh644/Azure-Migration-Project/blob/main/ResourceGroup.png))
+![./img/ssms_db_snapshot.png](https://github.com/jainharsh644/Azure-Migration-Project/blob/main/ResourceGroup.png)
 5. To access this database from Azure, we need to have a database user. Add an user to AdventureWorksLT2016 database by running the following commands in SSMS:
     ```
     CREATE LOGIN ssmsuser WITH PASSWORD = 'password';
